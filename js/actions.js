@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-        .register('./sw.js');
+        .register('../sw.js');
     }
 
     // $('.cs-navigation-tab li a').click(function(event){

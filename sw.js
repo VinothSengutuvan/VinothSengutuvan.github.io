@@ -1,10 +1,10 @@
 var cacheName = 'style-Guide';
 var filesToCache = [
   '/index.html',
-  '/reset.css',
-  '/pwa-style.css',
-  '/actions.js',
-  '/jquery-1.10.2.min.js'
+  '/css/reset.css',
+  '/css/pwa-style.css',
+  '/js/actions.js',
+  '/js/jquery-1.10.2.min.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
