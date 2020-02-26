@@ -1,6 +1,6 @@
 {
   "name": "Chat Support",
-  "short_name": "ChatSupport",
+  "short_name": "StyleGuide",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#6699FF",
