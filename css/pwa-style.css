@@ -617,10 +617,20 @@ legend{
   background-color: #ffffff;
   position: absolute;
   margin: 2px 0px 0px 2px;
+  transition: .3s ease-out;
+  -webkit-transition:  .3s ease-out; /* For Webkit browser(Chrome, Safari...)*/
+  -moz-transition: .3s ease-out; /* For Mozilla browser */
+  -ms-transition: .3s ease-out; /* For Opera browser */
+  -o-transition: .3s ease-out; /* For Microsoft browser */
 }
 
 .cs-switch.off:before{
   margin: 2px 0px 0px 24px;
+  transition: .3s ease-out;
+  -webkit-transition:  .3s ease-out; /* For Webkit browser(Chrome, Safari...)*/
+  -moz-transition: .3s ease-out; /* For Mozilla browser */
+  -ms-transition: .3s ease-out; /* For Opera browser */
+  -o-transition: .3s ease-out; /* For Microsoft browser */
 }
 
 .cs-switch:after{
@@ -631,12 +641,22 @@ legend{
   font-weight: bold;
   text-transform: uppercase;
   margin: 8px 0px 0px 10px;
+  transition: .3s ease-out;
+  -webkit-transition:  .3s ease-out; /* For Webkit browser(Chrome, Safari...)*/
+  -moz-transition: .3s ease-out; /* For Mozilla browser */
+  -ms-transition: .3s ease-out; /* For Opera browser */
+  -o-transition: .3s ease-out; /* For Microsoft browser */
 }
 
 .cs-switch.off:after{
   content: "";
   margin: 8px 0px 0px 32px;
   color: #8f99ad;
+  transition: .3s ease-out;
+  -webkit-transition:  .3s ease-out; /* For Webkit browser(Chrome, Safari...)*/
+  -moz-transition: .3s ease-out; /* For Mozilla browser */
+  -ms-transition: .3s ease-out; /* For Opera browser */
+  -o-transition: .3s ease-out; /* For Microsoft browser */
 }
 
 
