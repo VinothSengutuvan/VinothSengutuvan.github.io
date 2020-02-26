@@ -1,7 +1,7 @@
 {
   "name": "Chat Support",
-  "short_name": "StyleGuide",
-  "start_url": ".",
+  "short_name": "ChatSupport",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#6699FF",
   "theme_color": "#202a3d",
