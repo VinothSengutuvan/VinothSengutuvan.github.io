@@ -20,6 +20,11 @@ $(document).ready(function() {
             event.target.classList.add('off');
     });
 
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+        .register('./sw.js');
+    }
+
     // $('.cs-navigation-tab li a').click(function(event){
 
     //     if(event.target.classList.contains("active"))
