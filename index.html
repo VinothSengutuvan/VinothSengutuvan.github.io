@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		
+        <title>AnswerForce</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css"/>
+        <link rel="stylesheet" href="./css/pwa-style.css"/>
+        <link rel="manifest" href="./manifest.json">
+        <!-- ios support icons in safari browsers -->
+        <link rel="apple-touch-icon" href="./images/icons/icon-128.png"/>
+        <meta name="apple-mobile-web-app-status-bar" content="#595959">
+    </head>
+    <body>
+        <section class="cs-dropdwn-wrp">
+            <h1>Dropdowns</h1>
+            <h2>Normal Dropdown</h2>
+            <div class="cs-dropdwn">
+                <label>Label</label>
+                <p>Dropdown</p>
+                <svg>
+                  <use xlink:href="#dwn-uparrow-icon"></use>
+                </svg>
+                <div>
+                    <ul>
+                        <li><a href="javascript:void(0)">List Option1</a></li>
+                        <li><a href="javascript:void(0)">List Option2</a></li>
+                        <li><a href="javascript:void(0)">List Option3</a></li>
+                        <li><a href="javascript:void(0)">List Option4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <h2>Search Dropdown</h2>
+            <div class="cs-dropdwn cs-dropdwn-search">
+                <label>Label</label>
+                <p>Dropdown</p>
+                <svg>
+                  <use xlink:href="#dwn-uparrow-icon"></use>
+                </svg>
+                <div>
+                    <input type="text" value="" placeholder="Search in dropdown"/>
+                    <svg class="icon">
+                      <use xlink:href="#search-icon"></use>
+                    </svg>
+                    <span style="display:none;">No Found Result</span>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <figure>
+                                    <img src="http://lh3.googleusercontent.com/DUnXF1SWeuAUbRkBEydOLY-98ssKKA3JBesIpNSgse8DvPNRTHkTJXlEic2NUXMPYeNglGp2Tmw45v7cnnjIf89vKUnoXEZgC6N8TkQ=s40"/>
+                                </figure>
+                                Vinoth
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <figure>
+                                    <img src="http://storage.googleapis.com/distributedsource-new-app/91dfed2f-d29f-4302-89ee-341e9364b941/62736e64-e1ab-4fec-a1ba-4f8d8d8b6e4c/profile_picture?test=1553764174696"/>
+                                </figure>
+                                Siva
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <figure>
+                                    <img src="http://lh3.googleusercontent.com/g3wCHDaWRpMt6JjvULspXxWrarBDobTGAbNFjTuP63e16TDkp4GInmBUyzyACYgZ4jgpkODOGNXQSVXHqbMW1X-qi1OuR7zxNckwRcw"/>
+                                </figure>
+                                Ganesh
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <figure></figure>
+                                Without profile pic
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <h2>Checkbox Dropdown</h2>
+            <div class="cs-dropdwn cs-dropdwn-checkbox">
+                <label>Label</label>
+                <p>Dropdown</p>
+                <svg>
+                  <use xlink:href="#dwn-uparrow-icon"></use>
+                </svg>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" class="active">
+                                <cite>
+                                    <svg>
+                                        <use xlink:href="#tick-blue-icon"></use>
+                                    </svg>
+                                </cite>
+                                List Option1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <cite>
+                                    <svg>
+                                        <use xlink:href="#tick-blue-icon"></use>
+                                    </svg>
+                                </cite>
+                                List Option2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <cite>
+                                    <svg>
+                                        <use xlink:href="#tick-blue-icon"></use>
+                                    </svg>
+                                </cite>
+                                List Option3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <cite>
+                                    <svg>
+                                        <use xlink:href="#tick-blue-icon"></use>
+                                    </svg>
+                                </cite>
+                                List Option4
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cs-navigation-wrp">
+            <h1>Navigation</h1>
+            <h2>Tabs</h2>
+            <ul class="cs-navigation-tab">
+                <li><a href="javascript:void(0)" class="active">Selected Tab</a></li>
+                <li><a href="javascript:void(0)">Second Tab</a></li>
+                <li><a href="javascript:void(0)">Third Tab</a></li>
+            </ul>
+        </section>
+
+        <section class="cs-input-field-wrp">
+            <h1>Input field</h1>
+            <h2>Data Entered</h2>
+            <div class="cs-input-field">
+                <label>Label</label>
+                <input type="text" value="" placeholder="Data Entered"/>
+            </div>
+
+            <h2>Active Field</h2>
+            <div class="cs-input-field cs-active-field">
+                <label>Label</label>
+                <input type="text" value="Vinoth Sengutuvan" placeholder="Data Entered"/>
+            </div>
+
+            <h2>Password Field</h2>
+            <div class="cs-input-field">
+                <label>Label</label>
+                <input type="password" value="1234567890" placeholder=""/>
+            </div>
+
+            <h2>Disabled Field</h2>
+            <div class="cs-input-field cs-disabled-field">
+                <label>Label</label>
+                <input disabled type="text" value="" placeholder="Disabled field"/>
+            </div>
+
+            <h2>Warning Message</h2>
+            <div class="cs-input-field cs-alert-field">
+                <label>Label</label>
+                <input type="text" value="" placeholder="Data Entered"/>
+                <span><svg class="icon">
+                  <use xlink:href="#error-icon"></use>
+                </svg>Alert Message</span>
+            </div>
+
+            <h2>Error Message</h2>
+            <div class="cs-input-field cs-error-field">
+                <label>Label</label>
+                <input type="text" value="" placeholder="Data Entered"/>
+                <span><svg class="icon">
+                  <use xlink:href="#error-icon"></use>
+                </svg>Error Message</span>
+            </div>
+        </section>
+
+        <section class="cs-button-wrp">
+            <h1>Button Styles</h1>
+            <h2>Small-buttons</h2></br>
+            <button class="cs-btn cs-primary-btn cs-btn-xs">Primary</button>
+            <button class="cs-btn cs-secondary-btn cs-btn-xs">Secondary</button>
+            <button class="cs-btn cs-tertiary-btn cs-btn-xs">Tertiary</button>
+            <button class="cs-btn cs-disabled-btn cs-btn-xs">disabled</button>
+            </br><h2>Regular-buttons</h2></br>
+            <button class="cs-btn cs-primary-btn">Primary</button>
+            <button class="cs-btn cs-secondary-btn">Secondary</button>
+            <button class="cs-btn cs-tertiary-btn">Tertiary</button>
+            <button class="cs-btn cs-disabled-btn">disabled</button>
+            </br><h2>Large-buttons</h2></br>
+            <button class="cs-btn cs-primary-btn cs-btn-lg">Primary</button>
+            <button class="cs-btn cs-secondary-btn cs-btn-lg">Secondary</button>
+            <button class="cs-btn cs-tertiary-btn cs-btn-lg">Tertiary</button>
+            <button class="cs-btn cs-disabled-btn cs-btn-lg">disabled</button>
+        </section>
+
+        <section class="cs-switch-wrp">
+            <h1>Switch Styles</h1>
+            <h2>Switch On</h2>
+            <div class="cs-switch"></div>
+            <h2>Switch Off</h2>
+            <div class="cs-switch off"></div>
+        </section>
+
+        <section class="cs-switch-wrp">
+            <h1 style="margin:0px 0px 20px">Radio button</h1>
+            <div class="cs-radio-field">
+                <label><input type="radio" name="radio" checked/><cite></cite>Radio button Checked</label>
+            </div>
+            <div class="cs-radio-field">
+                <label><input type="radio" name="radio"/><cite></cite>Radio button Normal</label>
+            </div>
+            <div class="cs-radio-field">
+                <label><input type="radio" name="radio" disabled /><cite></cite>Radio button Disbled</label>
+            </div>
+        </section>
+
+        <section class="cs-switch-wrp">
+            <h1 style="margin:0px 0px 20px">Checkbox button</h1>
+            <div class="cs-checkbox-field">
+                <label>
+                    <svg class="icon">
+                      <use xlink:href="#white-tick-icon"></use>
+                    </svg>
+                    <input type="checkbox" name="checkbox" checked/><cite></cite>Radio button Checked
+                </label>
+            </div>
+            <div class="cs-checkbox-field">
+                <label>
+                    <svg class="icon">
+                      <use xlink:href="#white-tick-icon"></use>
+                    </svg>
+                    <input type="checkbox" name="checkbox"/><cite></cite>Radio button Normal
+                </label>
+            </div>
+            <div class="cs-checkbox-field">
+                <label>
+                    <svg class="icon">
+                      <use xlink:href="#white-tick-icon"></use>
+                    </svg>
+                    <input type="checkbox" name="checkbox" disabled /><cite></cite>Radio button Disbled
+                </label>
+            </div>
+        </section>
+
+        <svg width="0" height="0" class="hidden">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="search-icon">
+            <path fill="#181818" d="M13.918 12.824a.296.296 0 0 1 .082.219.4.4 0 0 1-.082.246l-.629.602a.34.34 0 0 1-.246.109.26.26 0 0 1-.219-.11l-3.336-3.308a.364.364 0 0 1-.082-.219V9.98c-.51.438-1.084.78-1.722 1.026a5.5 5.5 0 0 1-1.997.369 5.524 5.524 0 0 1-2.857-.766A5.746 5.746 0 0 1 .766 8.545 5.524 5.524 0 0 1 0 5.688c0-1.04.255-1.992.766-2.858A5.746 5.746 0 0 1 2.83.766 5.524 5.524 0 0 1 5.687 0c1.04 0 1.992.255 2.858.766a5.746 5.746 0 0 1 2.064 2.064c.51.866.766 1.818.766 2.857a5.5 5.5 0 0 1-.37 1.997A5.874 5.874 0 0 1 9.98 9.406h.383a.3.3 0 0 1 .219.082l3.336 3.336zm-8.23-2.761a4.28 4.28 0 0 0 2.187-.588 4.344 4.344 0 0 0 1.6-1.6 4.28 4.28 0 0 0 .588-2.188A4.28 4.28 0 0 0 9.475 3.5a4.344 4.344 0 0 0-1.6-1.6 4.28 4.28 0 0 0-2.188-.587A4.28 4.28 0 0 0 3.5 1.9a4.344 4.344 0 0 0-1.6 1.6 4.28 4.28 0 0 0-.587 2.188c0 .783.195 1.513.587 2.187a4.344 4.344 0 0 0 1.6 1.6 4.28 4.28 0 0 0 2.188.588z"></path>
+          </symbol>
+        </svg>
+        <!-- search icon -->
+
+        <svg width="0" height="0" class="hidden">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6" id="dwn-uparrow-icon">
+            <path fill="none" fill-rule="evenodd" stroke="#595959" d="M9 5L4.68 1 0 5"></path>
+          </symbol>
+        </svg>
+        <!-- dropdown up arrow icon -->
+
+        <svg width="0" height="0" class="hidden">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 8" id="tick-blue-icon">
+            <path fill="" d="M8.516.871a.211.211 0 0 1 .156-.058c.065 0 .124.019.176.058l.547.567c.052.039.078.09.078.156a.243.243 0 0 1-.078.176l-5.86 5.859a.211.211 0 0 1-.156.059.286.286 0 0 1-.176-.06L.605 5.013a.186.186 0 0 1-.078-.157c0-.065.026-.123.078-.175l.547-.547a.243.243 0 0 1 .176-.078c.065 0 .117.026.156.078L3.38 6.027 8.516.871z"></path>
+          </symbol>
+        </svg>
+        <!-- tick marck icon -->
+
+        <svg width="0" height="0" class="hidden">
+          <symbol viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" id="error-icon">
+            <title>Combined Shape</title>
+            <path d="M6.953.155a6.93 6.93 0 0 1 6.924 6.923A6.922 6.922 0 1 1 6.953.155zm.003 1.308a5.615 5.615 0 0 0-.003 11.23 5.622 5.622 0 0 0 5.617-5.615c0-3.1-2.513-5.614-5.614-5.615zm.65 7.637v1.353H6.3V9.1h1.307zm0-5.568v4.291H6.3V3.532h1.307z"
+              fill=""></path>
+          </symbol>
+        </svg>
+        <!-- error icon -->
+
+        <svg width="0" height="0" class="hidden">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 7" id="white-tick-icon">
+            <path fill="#FFF" fill-rule="evenodd" d="M6.702.223a.76.76 0 0 1 1.075 1.075L3.215 5.86a.76.76 0 0 1-1.075 0L.223 3.943a.76.76 0 1 1 1.075-1.075l1.38 1.38L6.701.222z"></path>
+          </symbol>
+        </svg>
+        <!-- white tick icon -->
+    </body>
+</html>

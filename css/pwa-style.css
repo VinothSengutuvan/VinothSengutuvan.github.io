@@ -1,0 +1,790 @@
+@charset "utf-8";
+/*Lato font added code here -----------------------------------------------------------------*/
+@font-face {
+  font-family: 'Lato';
+  src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('https://storage.googleapis.com/front-office/global-styles/fonts/Lato-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+/* common code start here ****************/
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-display: swap;
+  /* scrollbar-width: none; */
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+/*Placeholder code here -----------------------------------------------------------------*/
+::-webkit-input-placeholder {
+  color: var(--txt-gray-color);
+}
+:-ms-input-placeholder {
+  color: var(--txt-gray-color);
+}
+::-moz-placeholder {
+  color: var(--txt-gray-color);
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: var(--txt-gray-color);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/*cs-common code start here *********************/
+h1{
+  font-size: 40px;
+  line-height: 0.8;
+  color: #202a3d;
+  margin: 0px;
+}
+
+h2{
+  margin: 45px 0px 20px;
+  font-style: italic;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #f7f7f7;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+input{
+  font-family: 'Lato', sans-serif;
+}
+
+fieldset{
+  border:1px solid #181818;
+  padding: 50px;
+}
+
+legend{
+  font-style: italic;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #f7f7f7;
+  border:1px solid #181818;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+::-webkit-input-placeholder {
+  color: #acb7cc;
+}
+:-ms-input-placeholder {
+  color: #acb7cc;
+}
+::-moz-placeholder {
+  color: #acb7cc;
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: #acb7cc;
+  opacity: 1;
+}
+
+
+
+
+
+
+/*cs-dropdwn code start here *********************/
+.cs-dropdwn-wrp,
+.cs-navigation-wrp,
+.cs-input-field-wrp,
+.cs-button-wrp,
+.cs-switch-wrp{
+  font-family: 'Lato', sans-serif;
+  margin: 50px;
+}
+.cs-dropdwn-wrp .cs-dropdwn{
+  margin: 0px 0px 30px;
+}
+
+
+
+
+
+.cs-dropdwn{
+  width: 260px;
+  position: relative;
+}
+
+.cs-dropdwn > label{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: #8f99ad;
+  display: block;
+  padding: 16px 0px 0px;
+}
+
+.cs-dropdwn > p{
+  font-size: 16px;
+  line-height: normal;
+  color: #181818;
+  padding: 8px 40px 8px 0px;
+  border:1px solid #d3d9e5;
+  border-width: 0px 0px 1px;
+  cursor: pointer;
+}
+
+.cs-dropdwn > svg{
+  position: absolute;
+  bottom: 14px;
+  width: 10px;
+  height: 6px;
+  right: 15px;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.cs-dropdwn.open > svg{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.cs-dropdwn > div{
+  border-radius: 4px;
+  box-shadow: 0 3px 4px 0 rgba(10, 31, 68, 0.1), 0 0 1px 0 rgba(10, 31, 68, 0.08);
+  background-color: #ffffff;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+.cs-dropdwn > div ul{
+  padding: 8px 0px;
+  min-height: auto;
+  max-height: 137px;
+  overflow: auto;
+}
+
+.cs-dropdwn li a{
+  font-size: 14px;
+  line-height: 1.43;
+  color: #181818;
+  padding: 10px 24px;
+  text-decoration: none;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+.cs-dropdwn li a:hover{
+  color: #ffffff;
+  background-color: #6699ff;
+}
+
+.cs-dropdwn.open > p{
+  border-color: #6699ff;
+}
+
+.cs-dropdwn.open > div{
+  display: block;
+}
+
+.cs-dropdwn.open > label{
+  color: #6699ff;
+}
+
+
+/*cs-dropdwn-search code start here ***************/
+.cs-dropdwn-search > div ul{
+  max-height: 144px;
+}
+
+.cs-dropdwn-search input{
+  border: 1px solid #e6e9f0;
+  background-color: #ffffff;
+  border-radius: 16px;
+  line-height: 12px;
+  padding: 9px 30px 9px 15px;
+  width: 183px;
+  margin: 12px 16px 4px;
+}
+
+.cs-dropdwn-search > div > svg{
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 27px;
+  top: 22px;
+  cursor: pointer;
+}
+
+.cs-dropdwn-search > div span{
+  font-size: 12px;
+  padding: 0px 0px 12px;
+  text-align: center;
+  color: #181818;
+  display: block;
+}
+
+.cs-dropdwn-search li a{
+  padding: 14px 24px 14px 56px;
+}
+
+.cs-dropdwn-search li a:hover,
+.cs-dropdwn-checkbox li a:hover{
+  background-color: #f0f2f5;
+  color: #181818;
+}
+
+.cs-dropdwn-search li a figure{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 16px;
+  top: 9px;
+  border-radius: 100%;
+  background-color: #6699ff;
+  background-image: url("../images/user-white-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+.cs-dropdwn-search li a figure img{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  object-fit:cover;
+}
+
+
+/*cs-dropdwn-checkbox code start here ***************/
+.cs-dropdwn-checkbox li a{
+  padding: 10px 24px 10px 46px;
+}
+
+.cs-dropdwn-checkbox li a cite{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 16px;
+  top: 12px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border:1px solid #d3d9e5;
+}
+
+.cs-dropdwn-checkbox li a.active cite{
+  background-color: #4684FF;
+  border-color: #4684FF;
+}
+
+.cs-dropdwn-checkbox li a cite svg{
+  width: 8px;
+  height: 9px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  fill:#ffffff;
+}
+
+.cs-dropdwn-checkbox li a.active cite svg{
+  fill:#ffffff;
+}
+
+
+
+
+
+
+
+/*cs-navigation-tab code start here ***************************/
+.cs-navigation-tab {
+  border:1px solid #f0f4f7;
+  border-width: 0px 0px 1px;
+}
+
+.cs-navigation-tab li{
+  display: inline-block;
+}
+
+.cs-navigation-tab li a{
+  font-size: 14px;
+  line-height: 1.36;
+  font-weight: 600;
+  color: #acb7cc;
+  text-decoration: none;
+  padding: 10px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.cs-navigation-tab li:first-child a{
+  margin: 0px 20px 0px 0px;
+  padding: 10px 0px;
+}
+
+.cs-navigation-tab li a.active{
+  font-weight: bold;
+  color: #181818;
+}
+
+.cs-navigation-tab li a.active:before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 1px;
+  background-color: #6699ff;
+}
+
+
+
+
+/*cs-input-field code start here ***************************/
+.cs-input-field{
+  width: 280px;
+  position: relative;
+  margin: 0px 0px 24px;
+}
+
+.cs-input-field label{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: #8f99ad;
+  padding: 16px 0px 0px;
+  display:block;   
+}
+
+.cs-input-field input,
+.cs-input-field > p{
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  color: #181818;
+  padding: 8px 0px;
+  border: 1px solid #d3d9e5;
+  border-width: 0px 0px 1px;
+  cursor: auto;
+  width: 100%;
+  margin: 0px 0px 8px;
+  transition: border-color .3s ease-out;
+  -webkit-transition: border-color .3s ease-out; /* For Webkit browser(Chrome, Safari...)*/
+  -moz-transition: border-color .3s ease-out; /* For Mozilla browser */
+  -ms-transition: border-color .3s ease-out; /* For Opera browser */
+  -o-transition: border-color .3s ease-out; /* For Microsoft browser */
+}
+
+.cs-input-field input:focus,
+.cs-input-field > p:focus{ 
+  border-color: #d3d9e5;
+}
+
+.cs-input-field > span svg{
+  
+  position: absolute;
+  bottom: 1px;
+  width: 13px;
+  left: 0px;
+  height: 13px;
+}
+
+.cs-input-field > span{
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600;
+  padding: 0px 0px 0px 20px;
+  position: absolute;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: none;
+}
+
+.cs-input-field.cs-alert-field > span,
+.cs-input-field.cs-error-field > span{
+  display: block;
+}
+
+.cs-input-field.cs-alert-field > span{
+  color: #ff9400;
+}
+
+.cs-input-field.cs-alert-field > span svg{
+  fill: #ff9400;
+}
+
+.cs-input-field.cs-error-field > span{
+  color: #df0d29;
+}
+
+.cs-input-field.cs-error-field > span svg{
+  fill: #df0d29;
+}
+
+.cs-input-field.cs-active-field input,
+.cs-input-field.cs-active-field > p{
+  border-color: #6699ff;
+}
+
+.cs-input-field.cs-active-field label{
+  color: #6699ff;
+}
+
+.cs-input-field.cs-alert-field input,
+.cs-input-field.cs-alert-field > p{
+  border-color: #ff9400;
+}
+
+.cs-input-field.cs-error-field input,
+.cs-input-field.cs-error-field > p{
+  border-color: #df0d29;
+}
+
+.cs-input-field.cs-disabled-field input,
+.cs-input-field.cs-disabled-field p{
+  color: #8f99ad;
+}
+
+.cs-input-inlineblock-field .cs-input-field{
+  display: inline-block;
+  margin: 0px 40px 24px 0px;
+}
+
+.cs-input-field.public input{
+  padding: 8px 50px 8px 0px;
+}
+
+.cs-input-field.public:after{
+  content: "public";
+  position: absolute;
+  right: 0px;
+  font-size: 14px;
+  color: var(--txt-gray-color);
+  bottom: 20px;
+}
+
+
+
+
+/*cs-button styles code start here ***************************/
+.cs-btn-xs{
+  padding: 6px 8px 7px !important;
+  min-width: 96px !important;
+  font-size: 12px !important;
+}
+
+.cs-btn-lg{
+  padding: 12px !important;
+  min-width: 110px !important;
+  font-size: 14px !important;
+}
+
+.cs-btn{
+  line-height: normal;
+  border-radius: 3px;
+  color: #ffffff;
+  min-width: 98px;
+  border:1px solid #4684FF;
+  font-size: 14px;
+  padding: 8px 10px 9px;
+  cursor: pointer;
+  text-transform: capitalize;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: background .3s ease-out;
+  -webkit-transition: background .3s ease-out; /* For Webkit browser(Chrome, Safari...)*/
+  -moz-transition: background .3s ease-out; /* For Mozilla browser */
+  -ms-transition: background .3s ease-out; /* For Opera browser */
+  -o-transition: background .3s ease-out; /* For Microsoft browser */
+}
+
+.cs-primary-btn{
+  background-color: #4684FF;
+}
+
+.cs-primary-btn:hover{
+  /*background-color: #5886e0;*/
+  background-color: #3d73de;
+}
+
+.cs-secondary-btn{
+  background-color: #ffffff;
+  color: #4684FF;
+}
+
+.cs-disabled-btn{
+  background-color: #acb7cc;
+  border:1px solid #acb7cc;
+  color: #ffffff;
+}
+
+.cs-tertiary-btn{
+  background-color: #e0ebff;
+  border:1px solid #e0ebff;
+  color: #181818;
+}
+
+.cs-decline-btn{
+  background-color: #ffffff;
+  border:1px solid #ffffff;
+  color: #727c8f;
+}
+
+
+
+
+/*cs-switch code start here ***************************/
+.cs-switch{
+  width: 60px;
+  height: 26px;
+  background-color: #4684FF;
+  border-radius: 20px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.cs-switch.off{
+  background-color: #d3d9e5;
+}
+
+.cs-switch:before{
+  content: "";
+  width: 34px;
+  height: 22px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  margin: 2px 0px 0px 2px;
+}
+
+.cs-switch.off:before{
+  margin: 2px 0px 0px 24px;
+}
+
+.cs-switch:after{
+  content: "";
+  color: #4684FF;
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 8px 0px 0px 10px;
+}
+
+.cs-switch.off:after{
+  content: "";
+  margin: 8px 0px 0px 32px;
+  color: #8f99ad;
+}
+
+
+
+
+
+/*cs-radio-field code start here ***************************/
+.cs-radio-field{
+  padding: 10px 0px;
+}
+
+.cs-radio-field label{
+  padding: 0 0 0 30px;
+  cursor: pointer;
+  line-height: 1.43;
+  font-size: 14px;
+  color: #181818;
+  position: relative;
+}
+
+.cs-radio-field label input{
+  position: absolute;
+  opacity: 0;
+  left: 0px;
+}
+
+.cs-radio-field label cite{
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #acb7cc;
+  border-radius: 50%;
+  transition: border-color .3s ease-out;
+  -webkit-transition: border-color .3s ease-out; /* For Webkit browser(Chrome, Safari...)*/
+  -moz-transition: border-color .3s ease-out; /* For Mozilla browser */
+  -ms-transition: border-color .3s ease-out; /* For Opera browser */
+  -o-transition: border-color .3s ease-out; /* For Microsoft browser */
+}
+
+.cs-radio-field label cite:before{
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -4px;
+  transition: background-color .3s ease-out;
+  -webkit-transition: background-color .3s ease-out; /* For Webkit browser(Chrome, Safari...)*/
+  -moz-transition: background-color .3s ease-out; /* For Mozilla browser */
+  -ms-transition: background-color .3s ease-out; /* For Opera browser */
+  -o-transition: background-color .3s ease-out; /* For Microsoft browser*/
+}
+
+.cs-radio-field input:checked~cite,
+.cs-radio-field label:hover cite{
+  border-color: #4684FF;
+}
+
+.cs-radio-field input:checked~cite:before{
+  background-color: #4684FF;
+}
+
+.cs-radio-field input:disabled~cite{
+  border-color: #acb7cc;
+}
+
+.cs-radio-field input:disabled~cite:before{
+  background-color: #acb7cc;
+}
+
+
+
+
+
+/*cs-checkbox-field code start here ***************************/
+.cs-checkbox-field{
+  padding: 10px 0px;
+}
+
+.cs-checkbox-field label{
+  padding: 0 0 0 30px;
+  cursor: pointer;
+  line-height: 1.43;
+  font-size: 14px;
+  color: #181818;
+  position: relative;
+}
+
+.cs-checkbox-field label svg{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 5px;
+  top: 5px;
+  z-index: 1;
+}
+
+.cs-checkbox-field label input{
+  position: absolute;
+  opacity: 0;
+  left: 0px;
+}
+
+.cs-checkbox-field label cite{
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #acb7cc;
+  border-radius: 50%;
+  transition: background-color .3s ease-out;
+  -webkit-transition: background-color .3s ease-out; /* For Webkit browser(Chrome, Safari...)*/
+  -moz-transition: background-color .3s ease-out; /* For Mozilla browser */
+  -ms-transition: background-color .3s ease-out; /* For Opera browser */
+  -o-transition: background-color .3s ease-out; /* For Microsoft browser */
+}
+
+.cs-checkbox-field label:hover cite{
+  border-color: #6699ff;
+}
+
+.cs-checkbox-field input:checked~cite{
+  background-color: #6699ff;
+  border-color: #6699ff;
+}
+
+/*.cs-checkbox-field input:checked~cite:before{
+  background-color: #6699ff;
+}*/
+
+.cs-checkbox-field input:disabled~cite:before{
+  content: "";
+  height: 1px;
+  width: 6px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0px 0px 0px -3px;
+  z-index: 1;
+  background-color: #acb7cc;
+}
+
+.cs-checkbox-field label:hover input:disabled~cite{
+  border-color: #acb7cc;
+}
